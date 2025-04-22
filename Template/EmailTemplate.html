@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Security Notification</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    .email-wrapper {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .email-header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .email-header img {
+      max-width: 120px;
+      border-radius: 50%;
+    }
+
+    .email-title {
+      color: #d00000;
+      margin-top: 10px;
+    }
+
+    .email-body {
+      color: #333;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .email-body p {
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #d00000;
+      color: #fff;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      color: #999;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="email-wrapper">
+    <div class="email-header">
+      <img src="cid:logo" alt="Company Logo" />
+      <h2 class="email-title">Security Update</h2>
+    </div>
+    <div class="email-body">
+      <p>Dear <strong>{{UserName}}</strong>,</p>
+      <p>We noticed that a <strong>{{Action}}</strong> was recently made to your account. If this was you, no further action is needed.</p>
+      <p>If you did not make this change, please take immediate action to secure your account.</p>
+      <a href="{{ActionUrl}}" class="btn">Secure Your Account</a>
+      <p>If the button doesn’t work, copy and paste the following link into your browser:</p>
+      <p><a href="{{ActionUrl}}" style="color: #d00000;">{{ActionUrl}}</a></p>
+    </div>
+    <div class="footer">
+      <p>© 2025 Your Company | This is an automated email, please do not reply.</p>
+    </div>
+  </div>
+</body>
+</html>

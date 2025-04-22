@@ -1,0 +1,106 @@
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+code {
+  color: #E01A76;
+}
+
+.login-form {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.centered-container {
+  display: contents;
+  justify-content: center; /* Aligns horizontally */
+  align-items: center; /* Aligns vertically */
+  height: 100vh; /* Full viewport height */
+}
+
+.profile-form {
+  max-width: 700px;
+  margin: auto;
+  border: 2px solid #dc3545;
+  padding: 30px;
+}
+
+.profile-pic-wrapper {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-upload-label:hover .profile-pic {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.alert-danger {
+  background-color: #fff5f5;
+  border: 1px solid #ff4d4f;
+  color: #d32f2f;
+}
+
+.alert-danger .btn-danger {
+  background-color: #d32f2f;
+  border-color: #d32f2f;
+}
+
+.alert-danger .btn-secondary {
+  background-color: #eee;
+  color: #333;
+}
+
+/* styles.css */
+.custom-alert {
+  background-color: #fff5f5;
+  color: #b71c1c;
+  border-color: #f44336;
+}
+
+.custom-alert .btn-danger {
+  background-color: #d32f2f;
+  border-color: #d32f2f;
+}
+
+.custom-alert .btn-secondary {
+  background-color: #f1f1f1;
+  color: #333;
+  border: none;
+}
+
+
+/* Example media query for responsiveness */
+@media (max-width: 768px) {
+  .login-form {
+      max-width: 90%; /* Make the form take more space on small screens */
+      padding: 15px;  /* Adjust padding for mobile */
+  }
+}
+
+@media (max-width: 576px) {
+  .login-form {
+      max-width: 100%; /* Full width on very small screens */
+      padding: 10px;  /* Smaller padding on mobile */
+  }
+}
+
