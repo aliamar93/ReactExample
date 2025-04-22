@@ -12,7 +12,7 @@ namespace AutostoreProject.Controllers
     public class UserController : ControllerBase
     {
         
-        // Constructor for UserController
+
         // This constructor can be used to inject dependencies or services if needed
         private readonly IUserService _userService;
         public UserController(IUserService userService)
